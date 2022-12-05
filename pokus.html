@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="zaznamy">
+        <h3 class="newPojistenec">Nový pojištěnec</h3>
+        <input type="text" id="firstName" placeholder="Jméno">
+        <input type="text" id="secondName" placeholder="Příjmení"><br>
+        <input type="text" id="age" placeholder="Věk">
+        <input type="text" id="phoneNumber" placeholder="tel. číslo"><br>
+        <button id="ulozit">Přidat</button>
+        
+    </form>
+
+    <table class="tabulkaZP">
+        <thead class="hlavickaTabulkaZP">
+            <tr>
+                <th>Jméno a příjmení</th>
+                <th>Věk</th>
+                <th>Telefonní číslo</th>
+                <th>X</th>
+            </tr>
+        </thead>
+        <tbody id="teloTabulkaZP">
+
+        </tbody>
+    </table>
+    <script src="js2/Diar.js"></script>
+    <script src="js2/Zaznam.js"></script>
+    <script src="js2/obsluha.js"></script>
+   
+</body>
+
+</html>

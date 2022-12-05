@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Osobní portfolio programátora HoBiho." />
+    <meta name="keywords" content="portfolio, programátor, HoBi" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="HoBi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/ikona.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Jan Kotulič</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>Honza<span>Kotulič</span></h1>
+            <small>pojišťovna</small>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="dovednosti.html">Dovednosti</a></li>
+                <li><a href="reference.html">Reference</a></li>
+                <li class="aktivni"><a href="zaverecnaPrace.html">Závěrečná práce</a></li>
+                <li><a class="kontakt-tlacitko" href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+
+        <header>
+            <h1>Pojištěnci</h1>
+        </header>
+        <!--FORMULÁŘ-->
+        <section>
+            <form id="zaznamy">
+                <h3 class="newPojistenec">Nový pojištěnec</h3>
+                <input type="text" id="firstName" placeholder="Jméno">
+                <input type="text" id="secondName" placeholder="Příjmení"><br>
+                <input type="number" id="age" placeholder="Věk">
+                <input type="text" id="phoneNumber" placeholder="tel. číslo"><br>
+                <button id="ulozit">Přidat</button>
+                <hr>
+            </form>
+            <!-- VYPISOVÁNÍ TABULKY -->
+            <div id="vypisZaznamy">
+                <table class="tabulkaZP">
+                    <thead class="hlavickaTabulkaZP">
+                        <tr>
+                            <th>Jméno a příjmení</th>
+                            <th>Věk</th>
+                            <th>Telefonní číslo</th>
+                            <!--<th>X</th> kolomka na mazání-->
+                        </tr>
+                    </thead>
+                    <tbody id="teloTabulkaZP">
+                        
+                    </tbody>
+                 </table>
+            </div>
+        </section>
+    </article>
+    <footer>
+        Vytvořil &copy;Jan Kotulič 2022
+    </footer>
+    <script src="jsZaverecnaPrace/Pojistenci.js"></script>
+    <script src="jsZaverecnaPrace/Zaznam.js"></script>
+    <script src="jsZaverecnaPrace/oblusha.js"></script>
+</body>
+
+</html>
